@@ -1,0 +1,6 @@
+C:\Users\Shantel\Source\Repos\ITCS227LAB-finals\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Shantel\Source\Repos\ITCS227LAB-finals\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Shantel\Source\Repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataHelper.csproj.AssemblyReference.cache
+C:\Users\Shantel\Source\Repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataHelper.csproj.CoreCompileInputs.cache
+C:\Users\Shantel\Source\Repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Shantel\Source\Repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataAccess.pdb
