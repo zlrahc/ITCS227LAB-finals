@@ -68,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminDashboard.aspx" />
+    <Content Include="App_Data\MAINDB.mdf" />
+    <Content Include="App_Data\MAINDB_log.ldf">
+      <DependentUpon>MAINDB.mdf</DependentUpon>
+    </Content>
     <Content Include="default.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="master-style.css" />
