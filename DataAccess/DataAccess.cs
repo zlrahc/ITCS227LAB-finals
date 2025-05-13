@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,35 @@ namespace DataHelper
                     cmd.Parameters.AddWithValue("@Email", Email);
                     cmd.Parameters.AddWithValue("@Password", Password);
                     cmd.Parameters.AddWithValue("@Membership", Membership);
+
+                    cmd.ExecuteNonQuery();
+
+                    return true;
+
+                }
+                catch
+                {
+                    return false;
+                }
+
+            }
+
+        }
+
+        public bool UploadImage(string Image)
+        {
+
+            using(SqlConnection conn = new SqlConnection(connStr))
+            {
+
+                try
+                {
+
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand("UploadImage", conn);
+
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Image", Image);
 
                     cmd.ExecuteNonQuery();
 
