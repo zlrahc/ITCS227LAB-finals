@@ -138,6 +138,12 @@
   <ItemGroup>
     <Folder Include="assets\images\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataHelper.csproj">
+      <Project>{2e28ddc2-5e8c-470e-ad61-a272f3ffae5b}</Project>
+      <Name>DataHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

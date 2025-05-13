@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess
+namespace DataHelper
 {
-    internal class DataAccess
+    public class DataAccess
     {
 
-        private string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Shantel\source\repos\ITCS227LAB-finals\FinalActivity3\App_Data\MAINDB.mdf;Integrated Security=True";
+        private string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chloe\Source\Repos\ITCS227LAB-finals\FinalActivity3\App_Data\MAINDB.mdf;Integrated Security=True";
         
         public bool RegisterUser(string UserName, string Email, string Password, string Membership) {
 
@@ -28,6 +28,8 @@ namespace DataAccess
                     cmd.Parameters.AddWithValue("@Email", Email);
                     cmd.Parameters.AddWithValue("@Password", Password);
                     cmd.Parameters.AddWithValue("@Membership", Membership);
+
+                    cmd.ExecuteNonQuery();
 
                     return true;
 

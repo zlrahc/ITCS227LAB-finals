@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using DataHelper;
+
 
 namespace FinalActivity3
 {
@@ -14,10 +16,22 @@ namespace FinalActivity3
 
         }
 
+        DataAccess db = new DataAccess();
+
         protected void btnRegister_Click(object sender, EventArgs e)
         {
 
-            Response.Redirect("Login.aspx");
+            string UserName = txtFirstName.Text + " " + txtLastName.Text;
+
+            bool success = db.RegisterUser(UserName, txtEmailAddress.Text, txtPassword.Text, drpMembership.Text);
+            if (success)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+                Response.Write("Registration failed. Try again.");
+            }
 
         }
     }

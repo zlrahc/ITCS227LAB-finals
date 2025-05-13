@@ -34,10 +34,14 @@
                     <td><asp:TextBox ID="txtPassword" runat="server" CssClass="forms-input"></asp:TextBox></td>
                 </tr>
                 <tr>
-                    <td>Confirm Password</td>
+                    <td>Membership</td>
                 </tr>
                 <tr>
-                    <td><asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="forms-input"></asp:TextBox></td>
+                    <td><asp:DropDownList ID="drpMembership" runat="server" CssClass="forms-input">
+                        <asp:ListItem>Silver</asp:ListItem>
+                        <asp:ListItem>Gold</asp:ListItem>
+                        <asp:ListItem>Platinum</asp:ListItem>
+                    </asp:DropDownList></td>
                 </tr>
                 <tr>
                     <td><asp:Button ID="btnRegister" runat="server" CssClass="forms-input" Text="Register" OnClick="btnRegister_Click" /></td>
