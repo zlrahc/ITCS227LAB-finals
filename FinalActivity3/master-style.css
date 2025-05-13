@@ -1,0 +1,28 @@
+﻿body {
+
+    text-align: center;
+    width: 100%;
+
+}
+
+.forms-container {
+
+    width: 400px;
+    margin: auto;
+
+}
+
+.forms-container table {
+
+    table-layout: auto;
+    width: 100%;
+
+}
+
+.forms-input {
+
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+
+}
