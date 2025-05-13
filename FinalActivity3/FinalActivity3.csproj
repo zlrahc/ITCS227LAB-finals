@@ -74,7 +74,7 @@
     </Content>
     <Content Include="default.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="logo.png" />
+    <Content Include="assets\logo.png" />
     <Content Include="master-style.css" />
     <Content Include="Registration.aspx" />
     <Content Include="UserHome.aspx" />
@@ -134,6 +134,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

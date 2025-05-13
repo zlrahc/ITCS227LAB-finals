@@ -5,13 +5,35 @@
 
 }
 
+.icon {
+
+    height: 50px;
+
+}
+
 .header {
 
-    padding-block: 30px;
+    padding-block: 5px;
     background: #666666;
     background: linear-gradient(38deg, rgba(102, 102, 102, 1) 0%, rgba(181, 181, 181, 1) 36%, rgba(245, 245, 245, 1) 77%, rgba(161, 161, 161, 1) 100%);
 
-s}
+}
+
+.header table {
+
+    width: 100%;
+
+}
+
+.ninety {
+
+    width: 90%;
+
+}
+
+.five {
+    width: 5%;
+}
 
 .forms-container {
 
@@ -33,4 +55,10 @@ s}
     padding: 6px;
     box-sizing: border-box;
 
+}
+
+.footer {
+    padding-block: 5px;
+    background: #666666;
+    background: linear-gradient(38deg, rgba(102, 102, 102, 1) 0%, rgba(181, 181, 181, 1) 36%, rgba(245, 245, 245, 1) 77%, rgba(161, 161, 161, 1) 100%);
 }
