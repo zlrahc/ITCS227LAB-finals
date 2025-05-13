@@ -6,28 +6,42 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="forms-container">
+    <table class="half">
+        <tr>
+            <td>
 
-        <h2>Log In</h2>
+                <image style="height: 250px" class="logo" src="assets\logo.png"></image>
 
-        <table>
-            <tr>
-                <td>Email Address</td>
-            </tr>
-            <tr>
-                <td><asp:TextBox ID="txtEmailAddress" runat="server" CssClass="forms-input"></asp:TextBox><selection-overlay style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><blocked-overlay><div class="blockedOverlayWrapper" style="position: absolute; top: 0px; left: 0px; width: 995px; height: 674px; pointer-events: none;"><blocked-overlay-rect height="19.912500381469727" width="995" top="0" left="0"><br class="Apple-interchange-newline"><div class="blockedOverlayRect" style="position: absolute; cursor: not-allowed; background-color: rgba(0, 0, 0, 0.3); pointer-events: auto; top: 0px; left: 0px; width: 995px; height: 19.9125px;"></div></blocked-overlay-rect><blocked-overlay-rect height="456.97499656677246" width="995" top="217.02500343322754" left="0"><div class="blockedOverlayRect" style="position: absolute; cursor: not-allowed; background-color: rgba(0, 0, 0, 0.3); pointer-events: auto; top: 217.025px; left: 0px; width: 995px; height: 456.975px;"></div></blocked-overlay-rect><blocked-overlay-rect height="197.1125030517578" width="301.6000061035156" top="19.912500381469727" left="0"><div class="blockedOverlayRect" style="position: absolute; cursor: not-allowed; background-color: rgba(0, 0, 0, 0.3); pointer-events: auto; top: 19.9125px; left: 0px; width: 301.6px; height: 197.113px;"></div></blocked-overlay-rect><blocked-overlay-rect height="197.1125030517578" width="293.3999938964844" top="19.912500381469727" left="701.6000061035156"><div class="blockedOverlayRect" style="position: absolute; cursor: not-allowed; background-color: rgba(0, 0, 0, 0.3); pointer-events: auto; top: 19.9125px; left: 701.6px; width: 293.4px; height: 197.113px;"></div></blocked-overlay-rect></div></blocked-overlay><selector-parent-decorator></selector-parent-decorator><selector-insertion-decorator></selector-insertion-decorator><selector-decorator draggable="true" taglocation="Top"><div id="elementOutline" style="position: fixed; border-style: solid; border-width: 1px; border-color: rgb(24, 170, 252); outline-style: none; height: 33.2px; width: 396.8px; top: 89.625px; left: 302.2px;"><div class="selectionTag" tabindex="0" role="alert" aria-label="Selected Element " style="background-color: rgb(24, 170, 252); display: flex; position: absolute; font-weight: bold; white-space: nowrap; align-items: center; padding: 3px 10px; border-radius: 3px; box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.5) 0px -1px 4px 0px; color: rgb(0, 0, 0); font-family: &quot;Segoe UI&quot;, sans-serif; font-size: 12px; cursor: default; pointer-events: all; top: -32px; left: 0px;">asp:textbox#txtEmailAddress</div></div></selector-decorator><secondary-selections style="pointer-events: none;"></secondary-selections><drag-and-drop-insertion-point mousex="-1" mousey="-1"></drag-and-drop-insertion-point></selection-overlay><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"></span><blocked-resources-toast class="blocked-resources-toast" rooturl="http://localhost:51400/b9a8781c21324e61b77eed570c15c83c/" style="font-family: &quot;Times New Roman&quot;; font-size: medium; line-height: 16px; z-index: 2147483647; color: rgb(0, 0, 0); position: relative; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></blocked-resources-toast><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"></span><wlp-status-bar style="display: grid; grid-template-columns: minmax(0px, 1fr) max-content; position: fixed; box-shadow: rgba(0, 0, 0, 0.5) 0px -1px 4px 0px; height: 32px; width: 987.2px; bottom: 0px; left: 0px; font: 400 medium &quot;Times New Roman&quot;; background-color: rgb(0, 0, 0); color: rgb(0, 0, 0); letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><wlp-tag-navigator overflow-direction="right" style="max-height: 32px; display: grid; grid-template-columns: max-content minmax(0px, max-content) max-content;"><fluent-button id="leftScroller" appearance="stealth" aria-label="Left Scroller" class="tagNavBar_scroller stealth disabled" current-value="" disabled="" style="display: inline-block; position: relative; box-sizing: border-box; font-family: &quot;Segoe UI&quot;, sans-serif; font-size: 12px; line-height: 16px; font-weight: bold; font-variation-settings: &quot;opsz&quot; 8, &quot;wght&quot; 400; height: 32px; min-width: 32px; color: rgb(118, 118, 119); border-radius: 4px; fill: currentcolor; user-select: none;"><button class="control" part="control" value="" aria-label="Left Scroller" disabled="" style="border-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0.8px; border-image: none 100% / 1 / 0 stretch; flex-grow: 1; box-sizing: border-box; display: inline-flex; justify-content: center; align-items: center; padding: 0px 10px; white-space: nowrap; outline: none; text-decoration: none; color: inherit; border-radius: inherit; fill: inherit; font: inherit; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(0, 0, 0); cursor: not-allowed; opacity: 0.3; height: inherit;"><span part="start"><slot name="start"></slot></span><span class="content" part="content" style="pointer-events: none;"><slot>&lt;</slot></span><span part="end"><slot name="end"></slot></span></button></fluent-button><div class="tagNavBar_container" style="max-height: 32px; white-space: nowrap; overflow-x: hidden; --density: -1;"><ul class="tagNavBar_contents" style="display: inline-block; list-style: none; margin-block: 0px; padding-inline: 0px;"><li class="tagNavBar_tagItem" style="cursor: pointer; user-select: none; display: inline-block; font-family: &quot;Segoe UI&quot;, sans-serif; font-size: 12px; margin-right: 4px;"><fluent-button appearance="stealth" class="stealth disabled" aria-label="Root" data-selected="false" disabled="" current-value="" style="display: inline-flex; position: relative; box-sizing: border-box; font-family: &quot;Segoe UI&quot;, sans-serif; font-size: 12px; line-height: 16px; font-weight: initial; font-variation-settings: &quot;opsz&quot; 8, &quot;wght&quot; 400; height: 28px; min-width: 28px; color: rgb(229, 229, 229); border-radius: 4px; fill: currentcolor;"><button class="control" part="control" disabled="" value="" aria-label="Root" style="border-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0.8px; border-image: none 100% / 1 / 0 stretch; flex-grow: 1; box-sizing: border-box; display: inline-flex; justify-content: center; align-items: center; padding: 0px 2px; white-space: nowrap; outline: none; text-decoration: none; color: inherit; border-radius: inherit; fill: inherit; font: inherit; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(0, 0, 0); cursor: not-allowed; opacity: 0.3; height: inherit;"><span part="start"><slot name="start"></slot></span><span class="content" part="content" style="pointer-events: none;"><slot>Root</slot></span><span part="end"><slot name="end"></slot></span></button></fluent-button></li></ul></div></wlp-tag-navigator></wlp-status-bar><br class="Apple-interchange-newline"></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-            </tr>
-            <tr>
-                <td><asp:TextBox ID="txtPassword" runat="server" CssClass="forms-input"></asp:TextBox></td>
-            </tr>
-            <tr>
-                <td><asp:Button ID="btnLogin" runat="server" CssClass="forms-input" Text="Log In" OnClick="btnLogin_Click" /></td>
-            </tr>   
-        </table>
+            </td>
+            <td>
+                <div class="forms-container">
 
-    </div>
+                    <h2>Log In</h2>
+
+                    <table>
+                        <tr>
+                            <td>Email Address</td>
+                        </tr>
+                        <tr>
+                            <td><asp:TextBox ID="txtEmailAddress" runat="server" CssClass="forms-input"></asp:TextBox></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                        </tr>
+                        <tr>
+                            <td><asp:TextBox ID="txtPassword" runat="server" CssClass="forms-input"></asp:TextBox></td>
+                        </tr>
+                        <tr>
+                            <td><asp:Button ID="btnLogin" runat="server" CssClass="forms-input" Text="Register" OnClick="btnLogin_Click" /></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </td>
+        </tr>
+
+
+    </table>
+    
 
 </asp:Content>

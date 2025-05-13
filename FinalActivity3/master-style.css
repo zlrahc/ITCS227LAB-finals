@@ -13,7 +13,7 @@
 
 .header {
 
-    padding-block: 5px;
+    padding: 5px;
     background: #666666;
     background: linear-gradient(38deg, rgba(102, 102, 102, 1) 0%, rgba(181, 181, 181, 1) 36%, rgba(245, 245, 245, 1) 77%, rgba(161, 161, 161, 1) 100%);
 
@@ -33,6 +33,13 @@
 
 .five {
     width: 5%;
+}
+
+.half {
+
+   width: 100%;
+   table-layout: auto;
+
 }
 
 .forms-container {
