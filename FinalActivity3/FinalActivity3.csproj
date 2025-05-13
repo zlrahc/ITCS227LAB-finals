@@ -74,6 +74,7 @@
     </Content>
     <Content Include="default.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="logo.png" />
     <Content Include="master-style.css" />
     <Content Include="Registration.aspx" />
     <Content Include="UserHome.aspx" />
