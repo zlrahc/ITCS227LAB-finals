@@ -15,19 +15,24 @@
         </nav>
 
         <div class="admin-content">
+
             <h1>Product List</h1>
+
             <div class="product-container">
                 <asp:Repeater ID="rptProducts" runat="server">
-                    <ItemTemplate>
-                        <a class="product-card" href='<%# Eval("ProductID", "Home.aspx?productId={0}") %>'>
-                            <div class="product-card">
-                                <div class="product-name"><%# Eval("ProductName") %></div>
-                                <div class="product-price">₱<%# String.Format("{0:F2}", Eval("Price")) %></div>
-                            </div>
-                        </a>
-                    </ItemTemplate>
+                <ItemTemplate>
+                <div class="product-card">
+
+                    <>
+
+                    <div class="product-name"><%# Eval("ProductName") %></div>
+                    <div class="product-price">₱<%# String.Format("{0:F2}", Eval("Price")) %></div>
+                
+                </div>
+                </ItemTemplate>
                 </asp:Repeater>
             </div>
+
             <div class="product-details">
                 <h2>Selected Products</h2>
                 <asp:Repeater ID="rptSelectedProducts" runat="server">

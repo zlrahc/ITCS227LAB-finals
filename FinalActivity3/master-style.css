@@ -127,8 +127,7 @@
 .product-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 30px;
+    gap: 30px;
     overflow-x: auto;
     overflow-y: hidden;
 }
