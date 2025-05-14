@@ -44,20 +44,26 @@ namespace DataHelper
 
         }
 
-        public bool UploadImage(string Image)
+        public bool AddProduct(int Id, string ProductID, string ProductName, decimal Price, int Stocks, decimal SRP)
         {
 
-            using(SqlConnection conn = new SqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
 
                 try
                 {
 
                     conn.Open();
-                    SqlCommand cmd = new SqlCommand("UploadImage", conn);
+                    SqlCommand cmd = new SqlCommand("AddProduct", conn);
 
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Image", Image);
+                    cmd.Parameters.AddWithValue("@Id", Id);
+                    cmd.Parameters.AddWithValue("@ProductID", ProductID);
+                    cmd.Parameters.AddWithValue("@ProductName", ProductName);
+                    cmd.Parameters.AddWithValue("@Price", Price);
+                    cmd.Parameters.AddWithValue("@Stock", Stocks);
+                    cmd.Parameters.AddWithValue("@SRP", SRP);
+
 
                     cmd.ExecuteNonQuery();
 
@@ -70,6 +76,8 @@ namespace DataHelper
                 }
 
             }
+
+            return false;
 
         }
 

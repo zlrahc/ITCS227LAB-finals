@@ -11,29 +11,7 @@
 
 }
 
-.header {
 
-    padding: 5px;
-    background: #666666;
-    background: linear-gradient(38deg, rgba(102, 102, 102, 1) 0%, rgba(181, 181, 181, 1) 36%, rgba(245, 245, 245, 1) 77%, rgba(161, 161, 161, 1) 100%);
-
-}
-
-.header table {
-
-    width: 100%;
-
-}
-
-.ninety {
-
-    width: 90%;
-
-}
-
-.five {
-    width: 5%;
-}
 
 .half {
 
@@ -64,8 +42,95 @@
 
 }
 
-.footer {
-    padding-block: 5px;
+/*Master Page Style*/
+
+.header {
+    padding: 5px;
     background: #666666;
     background: linear-gradient(38deg, rgba(102, 102, 102, 1) 0%, rgba(181, 181, 181, 1) 36%, rgba(245, 245, 245, 1) 77%, rgba(161, 161, 161, 1) 100%);
 }
+
+    .header table {
+        width: 100%;
+    }
+
+.ninety {
+    width: 90%;
+}
+
+.five {
+    width: 5%;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1 0 auto;
+    padding: 20px;
+    background: #f5f5f5;
+    overflow-y: auto;
+}
+
+.footer {
+    min-height: 30px;
+    padding: 10px;
+    background: #666666;
+    background: linear-gradient(38deg, rgba(102, 102, 102, 1) 0%, rgba(181, 181, 181, 1) 36%, rgba(245, 245, 245, 1) 77%, rgba(161, 161, 161, 1) 100%);
+}
+
+/*Admin Dashboard Style*/
+.main-layout {
+    display: flex;
+    height: 100%;
+}
+
+.side-nav {
+    width: 220px;
+    background-color: #bbbbbb;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 10px;  
+    min-height: 50vh;
+    background-color: #ffffff;
+    overflow-x: auto;
+}
+
+    .styled-gridview {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .styled-gridview th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    .styled-gridview td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    .styled-gridview tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .styled-gridview tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .styled-gridview th, .styled-gridview td {
+        text-align: center;
+    }

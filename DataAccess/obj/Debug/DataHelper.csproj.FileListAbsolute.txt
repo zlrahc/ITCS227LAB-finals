@@ -4,9 +4,9 @@ C:\Users\Shantel\Source\Repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataHelper.
 C:\Users\Shantel\Source\Repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataHelper.csproj.CoreCompileInputs.cache
 C:\Users\Shantel\Source\Repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\Shantel\Source\Repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataAccess.pdb
-C:\Users\chloe\source\repos\ITCS227LAB-finals\DataAccess\bin\Debug\DataAccess.dll
-C:\Users\chloe\source\repos\ITCS227LAB-finals\DataAccess\bin\Debug\DataAccess.pdb
-C:\Users\chloe\source\repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataHelper.csproj.AssemblyReference.cache
-C:\Users\chloe\source\repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataHelper.csproj.CoreCompileInputs.cache
-C:\Users\chloe\source\repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataAccess.dll
-C:\Users\chloe\source\repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\chloe\Source\Repos\ITCS227LAB-finals\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\chloe\Source\Repos\ITCS227LAB-finals\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\chloe\Source\Repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataHelper.csproj.AssemblyReference.cache
+C:\Users\chloe\Source\Repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataHelper.csproj.CoreCompileInputs.cache
+C:\Users\chloe\Source\Repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\chloe\Source\Repos\ITCS227LAB-finals\DataAccess\obj\Debug\DataAccess.pdb

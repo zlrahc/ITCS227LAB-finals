@@ -11,25 +11,29 @@
 </head>
 <body><form id="form1" runat="server">
 
-    <div class="header">
+    <div class="layout-container">
 
-        <table>
-            <tr>
-                <td class="ninety"><image class="icon logo" src="assets\logo.png"></image></td>
-                <td class="five"><image class="icon cart" src="assets\logo.png"></image></td>
-                <td class="five"><image class="icon profile" src="assets\logo.png"></image></td>
-            </tr>
-        </table>
+        <div class="header">
 
-    </div>
+            <table>
+                <tr>
+                    <td class="ninety"><image class="icon logo" src="assets\logo.png"></image></td>
+                    <td class="five"><image class="icon cart" src="assets\logo.png"></image></td>
+                    <td class="five"><image class="icon profile" src="assets\logo.png"></image></td>
+                </tr>
+            </table>
 
-    <main class="glass-card">
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
-    </main>
+        </div>
+
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
        
-    <div class="footer">
+        <div class="footer">
 
+            Charlz Edison Layug | Shantel Amanda De Guzman | Precoius Chloe Magpale
 
+        </div>
 
     </div>
 
