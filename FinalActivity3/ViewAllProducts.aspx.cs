@@ -59,14 +59,26 @@ namespace FinalActivity3
         protected void btnAddProduct_Click(object sender, EventArgs e)
         {
 
-            bool success = db.AddProduct(Convert.ToInt32(txtID.Text), txtProductID.Text, txtProductName.Text,Convert.ToDecimal(txtPrice.Text), Convert.ToInt32(txtStocks.Text), Convert.ToDecimal(txtSRP.Text));
-            if (success)
+            decimal price, srp;
+            int stocks;
+
+            if (decimal.TryParse(txtPrice.Text, out price) &&
+                decimal.TryParse(txtSRP.Text, out srp) &&
+                int.TryParse(txtStocks.Text, out stocks))
             {
-                Response.Redirect("Login.aspx");
+                bool success = db.AddProduct(txtProductID.Text, txtProductName.Text, price, stocks, srp);
+                if (success)
+                {
+                    
+                }
+                else
+                {
+                    Response.Write("Registration failed. Try again.");
+                }
             }
             else
             {
-                Response.Write("Registration failed. Try again.");
+                Response.Write("Invalid numeric values entered.");
             }
 
         }

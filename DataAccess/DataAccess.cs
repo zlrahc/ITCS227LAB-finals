@@ -11,7 +11,7 @@ namespace DataHelper
     public class DataAccess
     {
 
-        private string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chloe\Source\Repos\ITCS227LAB-finals\FinalActivity3\App_Data\MAINDB.mdf;Integrated Security=True";
+        private string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chloe\source\repos\ITCS227LAB-finals\FinalActivity3\App_Data\MAINDB.mdf;Integrated Security=True";
         
         public bool RegisterUser(string UserName, string Email, string Password, string Membership) {
 
@@ -44,7 +44,7 @@ namespace DataHelper
 
         }
 
-        public bool AddProduct(int Id, string ProductID, string ProductName, decimal Price, int Stocks, decimal SRP)
+        public bool AddProduct(string ProductID, string ProductName, decimal Price, int Stocks, decimal SRP)
         {
 
             using (SqlConnection conn = new SqlConnection(connStr))
@@ -57,27 +57,25 @@ namespace DataHelper
                     SqlCommand cmd = new SqlCommand("AddProduct", conn);
 
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Id", Id);
                     cmd.Parameters.AddWithValue("@ProductID", ProductID);
                     cmd.Parameters.AddWithValue("@ProductName", ProductName);
                     cmd.Parameters.AddWithValue("@Price", Price);
-                    cmd.Parameters.AddWithValue("@Stock", Stocks);
+                    cmd.Parameters.AddWithValue("@Stocks", Stocks);
                     cmd.Parameters.AddWithValue("@SRP", SRP);
 
 
                     cmd.ExecuteNonQuery();
-
+                        
                     return true;
 
                 }
-                catch
+                catch (Exception ex)
                 {
+                    Console.WriteLine(ex.Message);
                     return false;
                 }
 
             }
-
-            return false;
 
         }
 

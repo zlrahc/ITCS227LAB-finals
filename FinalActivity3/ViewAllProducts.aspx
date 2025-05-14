@@ -27,10 +27,6 @@
 
                 <table>
                     <tr>
-                        <td>ID</td>
-                        <td><asp:TextBox ID="txtID" runat="server"></asp:TextBox></td>
-                    </tr>
-                    <tr>
                         <td>ProductID</td>
                         <td><asp:TextBox ID="txtProductID" runat="server"></asp:TextBox></td>
                     </tr>
