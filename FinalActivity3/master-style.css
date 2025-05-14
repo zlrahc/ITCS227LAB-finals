@@ -1,43 +1,32 @@
 ﻿body {
-
-    margin: 0;    
+    margin: 0;
     width: 100%;
-
 }
 
 .icon {
-
     height: 50px;
-
 }
 
 .half {
-
-   width: 100%;
-   table-layout: auto;
-
+    width: 100%;
+    table-layout: auto;
 }
 
 .forms-container {
-
     text-align: center;
     width: 400px;
     margin: auto;
 }
 
-.forms-container table {
-
-    table-layout: auto;
-    width: 100%;
-
-}
+    .forms-container table {
+        table-layout: auto;
+        width: 100%;
+    }
 
 .forms-input {
-
     width: 100%;
     padding: 6px;
     box-sizing: border-box;
-
 }
 
 /*Master Page Style*/
@@ -95,18 +84,18 @@
 
 .admin-content {
     flex: 1;
-    padding: 10px;  
+    padding: 10px;
     min-height: 50vh;
     background-color: #ffffff;
     overflow-x: auto;
 }
 
-    .styled-gridview {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        font-family: Arial, sans-serif;
-    }
+.styled-gridview {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
 
     .styled-gridview th {
         background-color: #4CAF50;
@@ -132,3 +121,52 @@
     .styled-gridview th, .styled-gridview td {
         text-align: center;
     }
+
+/*User Page*/
+/*Home*/
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.product-card {
+    width: 100%; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+    .product-card:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.product-price {
+    color: green;
+    font-weight: bold;
+}
+
+.product-stocks {
+    color: gray;
+    font-size: 0.9em;
+}

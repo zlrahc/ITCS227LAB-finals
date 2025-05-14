@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Home.aspx" />
     <Content Include="MembersRecords.aspx" />
     <Content Include="ViewAllProducts.aspx" />
     <Content Include="App_Data\MAINDB.mdf" />
@@ -78,10 +79,16 @@
     <Content Include="assets\logo.png" />
     <Content Include="master-style.css" />
     <Content Include="Registration.aspx" />
-    <Content Include="UserHome.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MembersRecords.aspx.cs">
       <DependentUpon>MembersRecords.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -124,13 +131,6 @@
     </Compile>
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserHome.aspx.cs">
-      <DependentUpon>UserHome.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserHome.aspx.designer.cs">
-      <DependentUpon>UserHome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
