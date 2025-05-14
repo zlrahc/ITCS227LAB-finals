@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MembersRecords.aspx" />
     <Content Include="ViewAllProducts.aspx" />
     <Content Include="App_Data\MAINDB.mdf" />
     <Content Include="App_Data\MAINDB_log.ldf">
@@ -81,6 +82,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MembersRecords.aspx.cs">
+      <DependentUpon>MembersRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MembersRecords.aspx.designer.cs">
+      <DependentUpon>MembersRecords.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewAllProducts.aspx.cs">
       <DependentUpon>ViewAllProducts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

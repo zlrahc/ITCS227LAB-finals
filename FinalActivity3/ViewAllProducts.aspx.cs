@@ -25,12 +25,7 @@ namespace FinalActivity3
         }
 
         DataAccess db = new DataAccess();
-        protected void btnUpload_Click(object sender, EventArgs e)
-        {
-
-            
-
-        }
+    
 
         string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chloe\Source\Repos\ITCS227LAB-finals\FinalActivity3\App_Data\MAINDB.mdf;Integrated Security=True";
 
@@ -70,6 +65,8 @@ namespace FinalActivity3
                 if (success)
                 {
                     
+
+
                 }
                 else
                 {

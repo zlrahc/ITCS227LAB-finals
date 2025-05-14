@@ -11,9 +11,9 @@
         <nav class="side-nav">
             <ul>
                 <li><a href="ViewAllProducts.aspx">View All Products</a></li>
-                <li><a href="#">Members Records</a></li>
-                <li><a href="#">Transaction Log</a></li>
-                <li><a href="#">Report Module</a></li>
+                <li><a href="MembersRecords.aspx">Members Records</a></li>
+                <li><a href="TrasactionLog.aspx">Transaction Log</a></li>
+                <li><a href="ReportModule.aspx">Report Module</a></li>
             </ul>
         </nav>
 
