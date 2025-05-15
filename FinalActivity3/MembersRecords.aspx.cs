@@ -12,6 +12,9 @@ namespace FinalActivity3
 {
     public partial class MemberRecords : System.Web.UI.Page
     {
+     
+        private string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|MAINDB.mdf;Integrated Security=True";
+        
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -24,9 +27,6 @@ namespace FinalActivity3
         }
 
         DataAccess db = new DataAccess();
-
-
-        string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chloe\Source\Repos\ITCS227LAB-finals\FinalActivity3\App_Data\MAINDB.mdf;Integrated Security=True";
 
         private void LoadGridData()
         {

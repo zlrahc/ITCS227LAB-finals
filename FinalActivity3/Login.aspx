@@ -32,7 +32,10 @@
                             <td><asp:TextBox ID="txtPassword" runat="server" CssClass="forms-input"></asp:TextBox></td>
                         </tr>
                         <tr>
-                            <td><asp:Button ID="btnLogin" runat="server" CssClass="forms-input" Text="Register" OnClick="btnLogin_Click" /></td>
+                            <td><asp:Button ID="btnLogin" runat="server" CssClass="forms-input" Text="Log In" OnClick="btnLogin_Click" />
+                                <br />
+                                Don&#39;t have an account? <a href="registration.aspx">Sign up here!</a>
+                            </td>
                         </tr>
                     </table>
 

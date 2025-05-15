@@ -10,6 +10,9 @@ namespace FinalActivity3
 {
     public partial class Home : System.Web.UI.Page
     {
+
+        private string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|MAINDB.mdf;Integrated Security=True";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -26,7 +29,6 @@ namespace FinalActivity3
 
         private void LoadProducts()
         {
-            string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chloe\Source\Repos\ITCS227LAB-finals\FinalActivity3\App_Data\MAINDB.mdf;Integrated Security=True";
 
             using (SqlConnection conn = new SqlConnection(connStr))
             {
@@ -46,7 +48,6 @@ namespace FinalActivity3
 
         private void LoadProductDetails(string productId)
         {
-            string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chloe\Source\Repos\ITCS227LAB-finals\FinalActivity3\App_Data\MAINDB.mdf;Integrated Security=True";
 
             using (SqlConnection conn = new SqlConnection(connStr))
             {
@@ -78,7 +79,7 @@ namespace FinalActivity3
                         DataRow newRow = selectedProducts.NewRow();
                         newRow["ProductName"] = row["ProductName"].ToString();
                         newRow["Price"] = row["Price"].ToString();
-                        selectedProducts.Rows.Add(newRow); - []
+                        selectedProducts.Rows.Add(newRow);
 
                         Session["SelectedProducts"] = selectedProducts;
 

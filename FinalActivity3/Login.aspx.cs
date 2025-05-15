@@ -17,7 +17,7 @@ namespace FinalActivity3
         protected void btnLogin_Click(object sender, EventArgs e)
         {
 
-            
+            Response.Redirect("Home.aspx");
 
         }
     }

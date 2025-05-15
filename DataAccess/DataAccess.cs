@@ -11,8 +11,8 @@ namespace DataHelper
     public class DataAccess
     {
 
-        private string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chloe\source\repos\ITCS227LAB-finals\FinalActivity3\App_Data\MAINDB.mdf;Integrated Security=True";
-        
+        private string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|MAINDB.mdf;Integrated Security=True";
+
         public bool RegisterUser(string UserName, string Email, string Password, string Membership) {
 
             using (SqlConnection conn = new SqlConnection(connStr))
