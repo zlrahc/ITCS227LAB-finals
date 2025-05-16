@@ -1,5 +1,26 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Pages/MainMaster.Master" AutoEventWireup="true" CodeBehind="UserMaster.master.cs" Inherits="FinalsActivity.Pages.User.UserMaster" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+<asp:Content ID="UserHead" ContentPlaceHolderID="MainHead" runat="server">
+
+    <link href="/Assets/css/UserStyle.css" rel="stylesheet" />
+
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+<asp:Content ID="UserContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="user-layout">
+    
+        <div class="sidebar">
+            <ul>
+                <li><a href="Storefront.aspx">Store</a></li>
+                <li><a href="ShoppingCart.aspx">Cart</a></li>
+                <li><a href="OrderHistory.aspx">Orders</a></li>
+                <li><a href="ProfileManager.aspx">Profile</a></li>
+            </ul>
+        </div>
+
+        <div class="user-content">
+            <asp:ContentPlaceHolder ID="UserMasterContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+    </div>
 </asp:Content>

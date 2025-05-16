@@ -1,5 +1,26 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Pages/MainMaster.Master" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="FinalsActivity.Pages.Admin.AdminMaster" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+<asp:Content ID="AdminHead" ContentPlaceHolderID="MainHead" runat="server">
+
+    <link href="/Assets/css/AdminStyle.css" rel="stylesheet" />
+
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+<asp:Content ID="AdminContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="admin-layout">
+        
+        <div class="sidebar">
+            <ul>
+                <li><a href="ProductList.aspx">All Products</a></li>
+                <li><a href="UserList.aspx">Members Records</a></li>
+                <li><a href="TransactionLog.aspx">Transactions</a></li>
+                <li><a href="ReportModule.aspx">Report Module</a></li>
+            </ul>
+        </div>
+
+        <div class="admin-content">
+            <asp:ContentPlaceHolder ID="AdminMasterContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+    </div>
 </asp:Content>

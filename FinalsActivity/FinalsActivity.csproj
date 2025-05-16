@@ -67,13 +67,133 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\MainDatabase.mdf" />
+    <Content Include="App_Data\MainDatabase_log.ldf">
+      <DependentUpon>MainDatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="Assets\css\AdminStyle.css" />
+    <Content Include="Assets\css\MainStyle.css" />
+    <Content Include="Assets\css\UserStyle.css" />
+    <Content Include="Assets\images\logo.png" />
+    <Content Include="Pages\Admin\ProductList.aspx" />
+    <Content Include="Pages\Admin\TransactionLog.aspx" />
+    <Content Include="Pages\Admin\UserList.aspx" />
+    <Content Include="Pages\Home\Home.aspx" />
+    <Content Include="Pages\Home\Login.aspx" />
+    <Content Include="Pages\Home\Register.aspx" />
+    <Content Include="Pages\User\OrderHistory.aspx" />
+    <Content Include="Pages\User\ProfileManager.aspx" />
+    <Content Include="Pages\User\ShoppingCart.aspx" />
+    <Content Include="Pages\User\Storefront.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\Admin\AdminMaster.master.cs">
+      <DependentUpon>AdminMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\AdminMaster.master.designer.cs">
+      <DependentUpon>AdminMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\TransactionLog.aspx.cs">
+      <DependentUpon>TransactionLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\TransactionLog.aspx.designer.cs">
+      <DependentUpon>TransactionLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home\HomeMaster.master.cs">
+      <DependentUpon>HomeMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home\HomeMaster.master.designer.cs">
+      <DependentUpon>HomeMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainMaster.Master.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MainMaster.Master.designer.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\OrderHistory.aspx.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\User\OrderHistory.aspx.designer.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\ProfileManager.aspx.cs">
+      <DependentUpon>ProfileManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\User\ProfileManager.aspx.designer.cs">
+      <DependentUpon>ProfileManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\User\ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\Storefront.aspx.cs">
+      <DependentUpon>Storefront.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\User\Storefront.aspx.designer.cs">
+      <DependentUpon>Storefront.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\UserMaster.master.cs">
+      <DependentUpon>UserMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\User\UserMaster.master.designer.cs">
+      <DependentUpon>UserMaster.master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Pages\Admin\AdminMaster.master" />
+    <Content Include="Pages\Home\HomeMaster.master" />
+    <Content Include="Pages\MainMaster.Master" />
+    <Content Include="Pages\User\UserMaster.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

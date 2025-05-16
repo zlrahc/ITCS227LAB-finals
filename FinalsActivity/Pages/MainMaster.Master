@@ -4,16 +4,43 @@
 
 <html>
 <head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="MainHead" runat="server"></asp:ContentPlaceHolder>
+    <link href="~/Assets/css/MainStyle.css" rel="stylesheet" runat="server"/>
+
 </head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+
+<body><form id="form1" runat="server">
+<div class="master-layout">
+
+    <div class="header">
+
+        <div class="logo">
+        <a>
+            <img src="~/Assets/images/logo.png" runat="server"/>
+        </a>
         </div>
-    </form>
-</body>
+
+        <div class="navigation">
+            <ul>
+                <li><a href="~/Pages/Home/Home.aspx" runat="server">Home</a></li>
+                <li><a href="~/Pages/Admin/ProductList.aspx" runat="server">Admin</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div class="footer">
+
+        Charlz Edison R. Layug | Shantel Amanda De Guzman | Precious Chloe Magpale | BIT24
+
+    </div>
+
+</div>
+</form></body>
 </html>
