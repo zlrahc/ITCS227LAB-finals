@@ -72,6 +72,7 @@
       <DependentUpon>MainDatabase.mdf</DependentUpon>
     </Content>
     <Content Include="Assets\css\AdminStyle.css" />
+    <Content Include="Assets\css\HomeStyle.css" />
     <Content Include="Assets\css\MainStyle.css" />
     <Content Include="Assets\css\UserStyle.css" />
     <Content Include="Assets\images\logo.png" />

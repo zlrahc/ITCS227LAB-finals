@@ -2,7 +2,7 @@
 
 <asp:Content ID="HomeHead" ContentPlaceHolderID="MainHead" runat="server">
     
-
+    <link href="/assets/css/HomeStyle.css" rel="stylesheet"/>
 
 </asp:Content>
 
