@@ -2,6 +2,5 @@
 
 <asp:Content ID="Login" ContentPlaceHolderID="HomeMasterContent" runat="server">
 
-    Log In
 
 </asp:Content>
