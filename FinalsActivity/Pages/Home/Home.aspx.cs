@@ -12,6 +12,20 @@ namespace FinalsActivity.Pages.Home
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (Session["MemberType"] != null)
+            {
+                string account = Session["MemberType"].ToString().ToLower();
+
+                if (account == "admin")
+                {
+                    Response.Redirect("~/Pages/Admin/AdminDashboard.aspx");
+                }
+                else
+                {
+                    Response.Redirect("~/Pages/User/Storefront.aspx");
+                }
+            }
+
         }
     }
 }

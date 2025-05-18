@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalsActivity", "FinalsActivity\FinalsActivity.csproj", "{75F9BA76-EE94-438B-94DA-A8B5940297D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataHelper", "DataHelper\DataHelper.csproj", "{7DCB069B-7C7C-43FE-A5AF-FFD724A7947D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{75F9BA76-EE94-438B-94DA-A8B5940297D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75F9BA76-EE94-438B-94DA-A8B5940297D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75F9BA76-EE94-438B-94DA-A8B5940297D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DCB069B-7C7C-43FE-A5AF-FFD724A7947D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DCB069B-7C7C-43FE-A5AF-FFD724A7947D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DCB069B-7C7C-43FE-A5AF-FFD724A7947D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DCB069B-7C7C-43FE-A5AF-FFD724A7947D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
