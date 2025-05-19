@@ -75,6 +75,7 @@
     <Content Include="Assets\css\HomeStyle.css" />
     <Content Include="Assets\css\MainStyle.css" />
     <Content Include="Assets\css\UserStyle.css" />
+    <Content Include="Assets\images\home-background.jpg" />
     <Content Include="Assets\images\logo.png" />
     <Content Include="Pages\Admin\ProductList.aspx" />
     <Content Include="Pages\Admin\TransactionLog.aspx" />

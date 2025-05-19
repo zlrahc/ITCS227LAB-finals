@@ -16,7 +16,7 @@
     <div class="header">
 
         <div class="logo">
-        <a>
+        <a href="~/Pages/Home/Home.aspx" runat="server">
             <img src="~/Assets/images/logo.png" runat="server"/>
         </a>
         </div>
