@@ -39,5 +39,31 @@ namespace FinalsActivity.Pages.Admin
             }
         }
 
+        protected void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|MainDatabase.mdf;Integrated Security=True";
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            using (SqlCommand cmd = new SqlCommand("AddNewProduct", conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@ProductID", txtProductID.Text.Trim());
+                cmd.Parameters.AddWithValue("@ProductName", txtProductName.Text.Trim());
+                cmd.Parameters.AddWithValue("@Price", decimal.Parse(txtPrice.Text.Trim()));
+                cmd.Parameters.AddWithValue("@Stocks", int.Parse(txtStocks.Text.Trim()));
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+
+            txtProductID.Text = "";
+            txtProductName.Text = "";
+            txtPrice.Text = "";
+            txtStocks.Text = "";
+
+            BindProductGrid();
+        }
+
     }
 }

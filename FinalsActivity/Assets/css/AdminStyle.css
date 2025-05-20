@@ -79,3 +79,31 @@
         color: gray;
         background: rgba(255, 255, 255, 0.21);
     }
+
+.form-control {
+    width: 95%;
+    padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+}
+
+    .btn-primary:hover {
+        background-color: #45a049;
+    }
