@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Pages/Home/HomeMaster.master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="FinalsActivity.Pages.Home.Login" %>
 
 <asp:Content ID="Login" ContentPlaceHolderID="HomeMasterContent" runat="server">
-<div class="login-body">
+<div class="forms-body">
 
     <div class="forms-container">
 
@@ -21,7 +21,7 @@
                 <td><asp:TextBox ID="txtPassword" runat="server" CssClass="forms-input"></asp:TextBox></td>
             </tr>
             <tr>
-                <td><asp:Button ID="btnLogin" runat="server" CssClass="forms-input" Text="Login" OnClick="btnLogin_Click" />
+                <td><asp:Button ID="btnLogin" runat="server" CssClass="forms-button" Text="Login" OnClick="btnLogin_Click" />
                     <br />
                     Don't have an account? <a href="Register.aspx">Sign up here!</a></td>
             </tr>

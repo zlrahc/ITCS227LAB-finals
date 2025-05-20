@@ -15,6 +15,7 @@
                 <li><a href="ShoppingCart.aspx">Cart</a></li>
                 <li><a href="OrderHistory.aspx">Orders</a></li>
                 <li><a href="ProfileManager.aspx">Profile</a></li>
+                <li><asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click">Log Out</asp:LinkButton></li>
             </ul>
         </div>
 

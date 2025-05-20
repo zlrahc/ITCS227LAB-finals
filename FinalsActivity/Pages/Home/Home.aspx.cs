@@ -16,7 +16,7 @@ namespace FinalsActivity.Pages.Home
             {
                 string account = Session["MemberType"].ToString().ToLower();
 
-                if (account == "admin")
+                if (account == "Admin")
                 {
                     Response.Redirect("~/Pages/Admin/AdminDashboard.aspx");
                 }

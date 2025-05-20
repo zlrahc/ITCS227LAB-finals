@@ -15,6 +15,7 @@
                 <li><a href="UserList.aspx">Members Records</a></li>
                 <li><a href="TransactionLog.aspx">Transactions</a></li>
                 <li><a href="ReportModule.aspx">Report Module</a></li>
+                <li><asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click">Log Out</asp:LinkButton></li>
             </ul>
         </div>
 

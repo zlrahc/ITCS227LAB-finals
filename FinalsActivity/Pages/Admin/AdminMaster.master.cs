@@ -12,6 +12,26 @@ namespace FinalsActivity.Pages.Admin
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (Session["MemberType"] == null || Session["MemberType"].ToString() != "Admin")
+            {
+
+                Session.Clear();
+                Session.Abandon();
+
+                Response.Redirect("~/Pages/Home/Login.aspx");
+
+            }
+
+        }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+
+            Session.Clear();
+            Session.Abandon();
+
+            Response.Redirect("~/Pages/Home/Home.aspx");
+
         }
     }
 }

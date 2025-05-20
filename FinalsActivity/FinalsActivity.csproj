@@ -77,6 +77,7 @@
     <Content Include="Assets\css\UserStyle.css" />
     <Content Include="Assets\images\home-background.jpg" />
     <Content Include="Assets\images\logo.png" />
+    <Content Include="Pages\Admin\AdminDashboard.aspx" />
     <Content Include="Pages\Admin\ProductList.aspx" />
     <Content Include="Pages\Admin\TransactionLog.aspx" />
     <Content Include="Pages\Admin\UserList.aspx" />
@@ -90,6 +91,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\Admin\AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Admin\AdminMaster.master.cs">
       <DependentUpon>AdminMaster.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

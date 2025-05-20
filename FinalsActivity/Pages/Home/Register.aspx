@@ -1,11 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Pages/Home/HomeMaster.master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="FinalsActivity.Pages.Home.Register" %>
 
 <asp:Content ID="Register" ContentPlaceHolderID="HomeMasterContent" runat="server">
-<div class="login-body">
+<div class="forms-body">
 
     <div class="forms-container">
 
-        <h2>Register</h2>
+        <h1>Register</h1>
 
         <table>
             <tr>
@@ -34,14 +34,14 @@
                 <td>Membership Type</td>
             </tr>
             <tr>
-                <td><asp:DropDownList ID="drpMemberType" runat="server" CssClass="forms-input">
+                <td><asp:DropDownList ID="drpMemberType" runat="server" CssClass="forms-dropdown">
                     <asp:ListItem>Silver</asp:ListItem>
                     <asp:ListItem>Gold</asp:ListItem>
                     <asp:ListItem>Platinum</asp:ListItem>
                 </asp:DropDownList></td>
             </tr>
             <tr>
-                <td><asp:Button ID="btnRegister" runat="server" CssClass="forms-input" Text="Register" OnClick="btnRegister_Click" />
+                <td><asp:Button ID="btnRegister" runat="server" CssClass="forms-button" Text="Register" OnClick="btnRegister_Click" />
                     <br />
                     Already have an account? <a href="Login.aspx">Log in here!</a></td>
             </tr>

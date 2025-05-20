@@ -8,18 +8,17 @@
 
 
 /*Log in and Registration*/
-.login-body {
+.forms-body {
     height: 100%;
-    background: #595959;
-    background: linear-gradient(25deg, rgba(89, 89, 89, 1) 0%, rgba(145, 145, 145, 1) 35%, rgba(135, 135, 135, 1) 74%, rgba(71, 71, 71, 1) 100%);
+    background: #ffffff;
+    background: linear-gradient(150deg, rgba(255, 255, 255, 1) 0%, rgba(188, 188, 188, 1) 67%, rgba(153, 153, 153, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .forms-container {
-    background: #e0e0e0;
-    background: linear-gradient(25deg, rgba(224, 224, 224, 0.62) 0%, rgba(195, 195, 195, 1) 23%, rgba(217, 217, 217, 1) 48%, rgba(206, 206, 206, 0.62) 76%, rgba(255, 255, 255, 1) 100%);
+    background: rgba(255, 255, 255, 0.3);
     padding: 30px 40px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -51,5 +50,43 @@
 
     .forms-input:focus {
         border-color: #007bff;
+        outline: none;
+    }
+
+.forms-button {
+    width: 100%;
+    padding: 10px 0;
+    background: linear-gradient(25deg, #b0b0b0, #8a8a8a);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+    .forms-button:hover,
+    .forms-button:focus {
+        background: linear-gradient(25deg, #8a8a8a, #5c5c5c);
+        outline: none;
+    }
+
+.forms-dropdown {
+    width: 100%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.4);
+    color: #333;
+    font-size: 1rem;
+    appearance: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .forms-dropdown:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0,123,255,0.5);
         outline: none;
     }
