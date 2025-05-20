@@ -1,38 +1,56 @@
-﻿.admin-layout {
+﻿body {
+    background: #5782ab;
+    background: linear-gradient(38deg, rgba(87, 130, 171, 1) 0%, rgba(169, 186, 219, 1) 50%, rgba(224, 224, 224, 1) 100%);
+}
+
+.title {
+    font-size: 4em;
+    text-align: center;
+}
+
+.admin-layout {
     display: flex;
     min-height: 100%;
 }
 
 .sidebar {
     width: 220px;
-    background-color: #333;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 20px;
+    backdrop-filter: blur(5.6px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100vh;
+    box-sizing: border-box;
 }
 
     .sidebar ul {
+        width: 100%;
         list-style: none;
         padding: 0;
+        margin: 0;
     }
 
         .sidebar ul li a {
             color: white;
             text-decoration: none;
             display: block;
-            padding: 10px 0;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
         }
 
             .sidebar ul li a:hover {
-                background-color: #444;
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 4px;
             }
 
 .admin-content {
     flex: 1;
     padding: 20px;
-    background-color: #f9f9f9;
 }
 
-/*Product List*/
+/*Product and Member List*/
 .styled-gridview {
     width: 100%;
     border-collapse: collapse;
@@ -41,26 +59,23 @@
 }
 
     .styled-gridview th {
-        background-color: #333;
-        color: white;
+        background: rgba(255, 255, 255, 0.5);
+        color: black;
         padding: 10px;
         text-align: left;
-        border-bottom: 2px solid #555;
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .styled-gridview td {
         padding: 10px;
-        border-bottom: 1px solid #ccc;
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .styled-gridview tr:hover {
         background-color: #f1f1f1;
     }
 
-    .styled-gridview tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
-
-    .styled-gridview tr:nth-child(odd) {
-        background-color: #ffffff;
+    .styled-gridview tr {
+        color: gray;
+        background: rgba(255, 255, 255, 0.21);
     }

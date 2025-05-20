@@ -1,60 +1,80 @@
-﻿.user-layout {
+﻿body {
+    background: #5782ab;
+    background: linear-gradient(38deg, rgba(87, 130, 171, 1) 0%, rgba(169, 186, 219, 1) 50%, rgba(224, 224, 224, 1) 100%);
+}
+
+.title {
+    font-size: 4em;
+    text-align: center;
+}
+
+.user-layout {
     display: flex;
     min-height: 100%;
 }
 
 .sidebar {
     width: 220px;
-    background-color: #333;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 20px;
+    backdrop-filter: blur(5.6px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100vh;
+    box-sizing: border-box;
 }
 
     .sidebar ul {
+        width: 100%;
         list-style: none;
         padding: 0;
+        margin: 0;
     }
 
         .sidebar ul li a {
             color: white;
             text-decoration: none;
             display: block;
-            padding: 10px 0;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
         }
 
             .sidebar ul li a:hover {
-                background-color: #444;
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 4px;
             }
 
 .user-content {
     flex: 1;
     padding: 20px;
-    background-color: #f9f9f9;
 }
 
 /*Storefront*/
-
 .product-container {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 10px; /* optional padding on sides */
+    padding: 0 10px;
 }
 
 .product-card {
-    flex: 1 1 calc((100% / 4) - 15px); /* flexible width: max 4 cards per row with gaps */
+    flex: 1 1 calc((100% / 4) - 15px);
     max-width: calc((100% / 4) - 15px);
-    border: 1px solid #ccc;
     padding: 15px;
     box-sizing: border-box;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    min-width: 200px; /* optional, to avoid cards getting too small */
+    min-width: 200px;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
     .product-card h3 {
+        text-align:center;
         margin-top: 0;
         font-size: 1.2em;
         color: #333;
@@ -65,3 +85,66 @@
         font-size: 0.95em;
         color: #555;
     }
+
+.cart-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.quantity-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.add-cart-btn {
+    font-size: 1.25em;
+    width: 100%;
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.21);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+    .add-cart-btn:hover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+/*Shopping Cart*/
+.styled-gridview {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+    .styled-gridview th {
+        background: rgba(255, 255, 255, 0.5);
+        color: black;
+        padding: 10px;
+        text-align: left;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .styled-gridview td {
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .styled-gridview tr {
+        color: gray;
+        background: rgba(255, 255, 255, 0.21);
+    }
+
+        .styled-gridview tr:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }

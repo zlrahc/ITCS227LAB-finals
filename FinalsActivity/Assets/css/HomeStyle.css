@@ -3,9 +3,49 @@
     padding: 0;
     height: 100%;
     width: 100%;
+    background: #5782ab;
+    background: linear-gradient(38deg, rgba(87, 130, 171, 1) 0%, rgba(169, 186, 219, 1) 50%, rgba(224, 224, 224, 1) 100%);
 }
 /*Home*/
+.center-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.login-box {
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+    .login-box h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+.btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
 
 /*Log in and Registration*/
 .forms-body {

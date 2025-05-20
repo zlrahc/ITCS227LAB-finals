@@ -6,11 +6,15 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.EnterpriseServices.CompensatingResourceManager;
+using System.Configuration;
 
 namespace FinalsActivity.Pages.User
 {
     public partial class Storefront : System.Web.UI.Page
     {
+
+        private string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|MainDatabase.mdf;Integrated Security=True";
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -21,7 +25,7 @@ namespace FinalsActivity.Pages.User
 
         private void BindProducts()
         {
-            string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|MainDatabase.mdf;Integrated Security=True";
+            
             using (SqlConnection conn = new SqlConnection(connStr))
             using (SqlCommand cmd = new SqlCommand("GetProductList", conn))
             {
@@ -34,17 +38,42 @@ namespace FinalsActivity.Pages.User
 
         protected void rptProducts_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
-            if (e.CommandName == "Select")
+            if (e.CommandName == "AddToCart")
             {
-                string selectedProductId = e.CommandArgument.ToString();
+                string ProductID = e.CommandArgument.ToString();
+                TextBox txtQuantity = (TextBox)e.Item.FindControl("txtQuantity");
 
-                // Show the quantity and total panel
-                Panel pnl = (Panel)e.Item.FindControl("pnlSelection");
-                pnl.Visible = true;
+                if (int.TryParse(txtQuantity.Text, out int Quantity) && Quantity > 0)
+                {
+                    string UserID = Session["UserID"].ToString();
 
-                // You could also load price from database here if needed and display total price
-                // Or store product info in ViewState or Session
+                    AddToCart(UserID, ProductID, Quantity);
+
+                    txtQuantity.Text = "0";
+
+                }
+                else
+                {
+                    //lagyan invalid quantity
+                }
             }
         }
+
+        private void AddToCart(string userId, string productId, int quantity)
+        {
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            using (SqlCommand cmd = new SqlCommand("AddToCart", conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@UserID", userId);
+                cmd.Parameters.AddWithValue("@ProductID", productId);
+                cmd.Parameters.AddWithValue("@Quantity", quantity);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+
     }
 }
