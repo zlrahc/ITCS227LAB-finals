@@ -1,0 +1,13 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Pages/MainMaster.Master" AutoEventWireup="true" CodeBehind="HomeMaster.master.cs" Inherits="FinalsActivity.Pages.Home.HomeMaster" %>
+
+<asp:Content ID="HomeHead" ContentPlaceHolderID="MainHead" runat="server">
+    
+    <link href="/assets/css/HomeStyle.css" rel="stylesheet"/>
+
+</asp:Content>
+
+<asp:Content ID="HomeContent" ContentPlaceHolderID="MainContent" runat="server">
+
+    <asp:ContentPlaceHolder ID="HomeMasterContent" runat="server" />
+    
+</asp:Content>
