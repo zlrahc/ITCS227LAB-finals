@@ -50,8 +50,6 @@
 /*Log in and Registration*/
 .forms-body {
     height: 100%;
-    background: #ffffff;
-    background: linear-gradient(150deg, rgba(255, 255, 255, 1) 0%, rgba(188, 188, 188, 1) 67%, rgba(153, 153, 153, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,18 +64,13 @@
     max-width: 90%;
 }
 
-    .forms-container h2 {
+    .forms-container h1 {
         text-align: center;
-        margin-bottom: 20px;
     }
 
     .forms-container table {
         width: 100%;
         margin-bottom: 15px;
-    }
-
-    .forms-container td {
-        padding: 8px 0;
     }
 
 .forms-input {
@@ -96,7 +89,7 @@
 .forms-button {
     width: 100%;
     padding: 10px 0;
-    background: linear-gradient(25deg, #b0b0b0, #8a8a8a);
+    background: rgba(0, 0, 0, 0.21);
     border: none;
     border-radius: 5px;
     color: white;
@@ -107,7 +100,7 @@
 
     .forms-button:hover,
     .forms-button:focus {
-        background: linear-gradient(25deg, #8a8a8a, #5c5c5c);
+        background: rgba(0, 0, 0, 0.5);
         outline: none;
     }
 

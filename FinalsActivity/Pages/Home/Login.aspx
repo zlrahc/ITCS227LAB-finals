@@ -21,9 +21,10 @@
                 <td><asp:TextBox ID="txtPassword" runat="server" CssClass="forms-input"></asp:TextBox></td>
             </tr>
             <tr>
-                <td><asp:Button ID="btnLogin" runat="server" CssClass="forms-button" Text="Login" OnClick="btnLogin_Click" />
-                    <br />
-                    Don't have an account? <a href="Register.aspx">Sign up here!</a></td>
+                <td><br /><asp:Button ID="btnLogin" runat="server" CssClass="forms-button" Text="Login" OnClick="btnLogin_Click" /></td>
+            </tr>
+            <tr style="text-align:center">
+                <td>Don't have an account? <a href="Register.aspx">Sign up here!</a></td>
             </tr>
         </table>
 

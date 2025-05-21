@@ -41,9 +41,10 @@
                 </asp:DropDownList></td>
             </tr>
             <tr>
-                <td><asp:Button ID="btnRegister" runat="server" CssClass="forms-button" Text="Register" OnClick="btnRegister_Click" />
-                    <br />
-                    Already have an account? <a href="Login.aspx">Log in here!</a></td>
+                <td><br /><asp:Button ID="btnRegister" runat="server" CssClass="forms-button" Text="Register" OnClick="btnRegister_Click" /></td>
+            </tr>
+            <tr style="text-align:center">
+                <td>Already have an account? <a href="Login.aspx">Log in here!</a></td>
             </tr>
         </table>
 

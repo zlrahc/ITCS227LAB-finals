@@ -25,4 +25,29 @@
         </Columns>
     </asp:GridView>
 
+    <div class="cart-summary">
+        <table class="cart-summary-table">
+            <tr>
+                <td>Subtotal:</td>
+                <td><asp:Label ID="lblSubtotal" runat="server" Text="₱0.00" /></td>
+            </tr>
+            <tr>
+                <td>VAT (10%):</td>
+                <td><asp:Label ID="lblVAT" runat="server" Text="₱0.00" /></td>
+            </tr>
+            <tr>
+                <td>Discount:</td>
+                <td><asp:Label ID="lblDiscount" runat="server" Text="₱0.00" /></td>
+            </tr>
+            <tr>
+                <td>Total Amount:</td>
+                <td><asp:Label ID="lblFinalAmount" runat="server" Text="₱0.00" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" ><asp:Button ID="btnCheckout" runat="server" Text="Checkout" CssClass="add-cart-btn" OnClick="btnCheckout_Click" /></td>
+            </tr>
+        </table>
+        
+    </div>
+
 </asp:Content>

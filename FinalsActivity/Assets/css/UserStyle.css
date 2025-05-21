@@ -148,3 +148,32 @@
         .styled-gridview tr:hover {
             background: rgba(255, 255, 255, 0.5);
         }
+
+.cart-summary {
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    z-index: 1000;
+}
+
+.cart-summary-table {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    color: #333;
+    font-size: 14px;
+}
+
+    .cart-summary-table td {
+        padding: 8px 5px;
+    }
+
+    .cart-summary-table tr:last-child {
+        font-weight: bold;
+        font-size: 16px;
+        color: green;
+    }
